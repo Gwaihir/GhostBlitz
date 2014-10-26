@@ -1,6 +1,5 @@
 package materials;
 
-
 public enum Item {
     Ghost (Color.White),
     Chair (Color.Red),
