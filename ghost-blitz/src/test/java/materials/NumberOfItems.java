@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Example (acceptance test)
+ */
 public class NumberOfItems {
 
 	@Test

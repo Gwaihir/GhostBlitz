@@ -11,6 +11,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+/**
+ * Example (acceptance test)
+ */
 @RunWith(Parameterized.class)
 public class ItemsPresent {
 	String item;
