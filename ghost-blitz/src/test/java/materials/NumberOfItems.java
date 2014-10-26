@@ -9,7 +9,7 @@ public class NumberOfItems {
 
 	@Test
 	public void thereShouldBe5Items() {
-		assertThat(Items.values().length, is(5));
+		assertThat(Item.values().length, is(5));
 	}
 
 }

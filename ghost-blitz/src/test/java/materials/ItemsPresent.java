@@ -24,7 +24,7 @@ public class ItemsPresent {
 
 	@Test
 	public void thereShouldBeAnItemWithColor() {
-		assertThat(Items.valueOf(item).color().toString(), is(color));
+		assertThat(Item.valueOf(item).color().toString(), is(color));
 	}
 	
 	@Parameters

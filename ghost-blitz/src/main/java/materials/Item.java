@@ -1,7 +1,7 @@
 package materials;
 
 
-public enum Items {
+public enum Item {
     Ghost (Color.White),
     Chair (Color.Red),
     Bottle (Color.Green),
@@ -10,7 +10,7 @@ public enum Items {
     
     private Color color;
     
-	private Items(Color color) {
+	private Item(Color color) {
 		this.color = color;
 	}
 
