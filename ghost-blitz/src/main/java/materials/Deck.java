@@ -10,19 +10,23 @@ public class Deck {
 	private ListIterator<Card> iterator;
 
 	public Deck() {
-		createDeck();
+		createCardsForAllItemCombinations();
 		iterator = cards.listIterator();
 	}
 
-	private void createDeck() {
+	private void createCardsForAllItemCombinations() {
 		Item[] items = Item.values();
 		for (int i = 0; i < items.length; i++) {
 			for (int j = i + 1; j < items.length; j++) {
-				for (int k = 0; k < 8; k++) {
-					cards.add(new Card(new Image(items[i], Color.Blue),
-							new Image(items[j], Color.Grey)));
-				}
+				createCardsForItemCombination(items[i], items[j]);
 			}
+		}
+	}
+
+	private void createCardsForItemCombination(Item itemOne, Item itemTwo) {
+		for (int k = 0; k < 8; k++) {
+			cards.add(new Card(new Image(itemOne, Color.Blue),
+					new Image(itemTwo, Color.Grey)));
 		}
 	}
 
