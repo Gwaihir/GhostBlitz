@@ -37,7 +37,7 @@ public class ItemsPresent {
 	         { "Chair", "Red" },
 	         { "Bottle", "Green" },
 	         { "Book", "Blue" },
-	         { "Mouse", "Grey" }
+	         { "Mouse", "Gray" }
 	      });
 	}
 
