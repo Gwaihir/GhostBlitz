@@ -28,7 +28,7 @@ public class Deck {
 		createCardsWithItemDepictedInOriginalColor(item1, item2);
 		for (int k = 0; k < 6; k++) {
 			cards.add(new Card(Item.Mouse, new Image(item1, Color.Blue),
-					new Image(item2, Color.Grey)));
+					new Image(item2, Color.Gray)));
 		}
 	}
 

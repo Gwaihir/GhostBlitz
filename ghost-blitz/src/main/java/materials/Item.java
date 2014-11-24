@@ -5,7 +5,7 @@ public enum Item {
     Chair (Color.Red),
     Bottle (Color.Green),
     Book (Color.Blue),
-    Mouse (Color.Grey);
+    Mouse (Color.Gray);
     
     private Color color;
     
