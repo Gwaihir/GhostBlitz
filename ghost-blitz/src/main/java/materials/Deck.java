@@ -1,7 +1,9 @@
 package materials;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Random;
 
 public class Deck {
 
@@ -10,6 +12,7 @@ public class Deck {
 
 	public Deck() {
 		cards = new DeckGenerator().generate();
+		Collections.shuffle(cards, new Random(System.nanoTime()));
 		iterator = cards.listIterator();
 	}
 

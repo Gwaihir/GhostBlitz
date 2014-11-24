@@ -22,4 +22,10 @@ public class EveryCardDepictsTwoItemsAndLeadsToADesiredItem {
 		new Card(Item.Mouse, new Image(Item.Book, Color.Red), null);
 	}
 
+	@Test(expected = IllegalArgumentException.class)
+	public void cantGetAnImageForAnItemNotDepicted() {
+		new Card(Item.Mouse, new Image(Item.Mouse, Color.Gray), 
+				new Image(Item.Book, Color.Red)).getImage(Item.Ghost);
+		
+	}	
 }

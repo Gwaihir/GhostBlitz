@@ -27,4 +27,10 @@ public class Card {
 		return image1.item() == item || image2.item() == item;
 	}
 
+	public Image getImage(Item item) {
+		if (image1.item() == item) return image1;
+		if (image2.item() == item) return image2;	
+		throw new IllegalArgumentException("Item " + item + "not depicted");
+	}
+
 }
