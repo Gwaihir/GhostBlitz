@@ -5,9 +5,9 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 @NonNullByDefault
 public class Card {
 
-	private Item desiredItem;
-	private Image image1;
-	private Image image2;
+	private final Item desiredItem;
+	private final Image image1;
+	private final Image image2;
 
 	Card(Item desiredItem, Image image1, Image image2) {
 		if (desiredItem == null || image1 == null || image2 == null) {

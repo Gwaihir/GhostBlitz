@@ -5,8 +5,8 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 @NonNullByDefault
 public class Image {
 
-	private Item item;
-	private Color color;
+	private final Item item;
+	private final Color color;
 
 	public Image(Item item, Color color) {
 		if (item == null || color == null) {
