@@ -30,7 +30,7 @@ public class EachCombinationIsUsedOnceToLeadToEachDepictedItemAsTheDesiredItem {
 
 
 	@Test
-	public void ThereShouldBe1CardShowingItem1AndItem2ForWhichTheDesiredItemIsItem1() {
+	public void thereShouldBe1CardShowingItem1AndItem2ForWhichTheDesiredItemIsItem1() {
 		Deck deck = new Deck();
 		int found = 0;
 		while (deck.hasNext()) {

@@ -31,7 +31,7 @@ public class EachCombinationIsUsedToLeadToEachItemNotDepictedAsTheDesiredItem {
 
 
 	@Test
-	public void ThereShouldBeACardShowingItem1AndItem2ForWhichTheDesiredItemIsItem3() {
+	public void thereShouldBeACardShowingItem1AndItem2ForWhichTheDesiredItemIsItem3() {
 		Deck deck = new Deck();
 		int found = 0;
 		while (deck.hasNext()) {

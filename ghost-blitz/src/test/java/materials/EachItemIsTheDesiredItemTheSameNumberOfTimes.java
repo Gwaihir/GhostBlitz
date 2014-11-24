@@ -23,7 +23,7 @@ public class EachItemIsTheDesiredItemTheSameNumberOfTimes {
 	}
 
 	@Test
-	public void ThereShouldBe16CardsForEachDesiredItem() {
+	public void thereShouldBe16CardsForEachDesiredItem() {
 		Deck deck = new Deck();
 		int found = 0;
 		while (deck.hasNext()) {

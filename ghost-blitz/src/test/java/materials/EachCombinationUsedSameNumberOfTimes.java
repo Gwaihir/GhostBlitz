@@ -26,7 +26,7 @@ public class EachCombinationUsedSameNumberOfTimes {
 	}
 
 	@Test
-	public void ThereShouldBe8CardsShowingEachCombo() {
+	public void thereShouldBe8CardsShowingEachCombo() {
 		Deck deck = new Deck();
 		int found = 0;
 		while (deck.hasNext()) {

@@ -33,4 +33,45 @@ public class Card {
 		throw new IllegalArgumentException("Item " + item + "not depicted");
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + desiredItem.hashCode();
+		result = prime * result + image1.hashCode() + image2.hashCode();
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof Card)) {
+			return false;
+		}
+		Card other = (Card) obj;
+		if (desiredItem != other.desiredItem) {
+			return false;
+		}
+		if (!other.depictsItem(image1.item())) {
+			return false;
+		}
+		if (!other.getImage(image1.item()).equals(image1)) {
+			return false;
+		}
+		if (!other.depictsItem(image2.item())) {
+			return false;
+		}
+		if (!other.getImage(image2.item()).equals(image2)) {
+			return false;
+		}
+		return true;
+	}
+
+	
+	
 }
