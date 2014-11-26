@@ -1,10 +1,10 @@
 package materials;
 
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Test;
 
@@ -21,21 +21,12 @@ public class DeckOfCards {
 	
 	@Test
 	public void allCardsAreDifferent() {
-		List<Card> cards = getCards();
-		for (int i = 0; i < cards.size(); i++) {
-				for (int j = i + 1; j < cards.size(); j++) {
-					assertThat(cards.get(i), is(not(equalTo(cards.get(j)))));
-				}
-			}
-		}
-
-	private List<Card> getCards() {
-		List<Card> cards = new ArrayList<Card>();
+		Set<Card> cards = new HashSet<Card>();
 		Deck deck = new Deck();
 		while (deck.hasNext()) {
 			cards.add(deck.draw());
 		}
-		return cards;
+		assertThat(cards.size(), is(80));
 	}
 
 }
